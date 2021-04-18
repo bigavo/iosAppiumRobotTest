@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>ChooseACategoryTest.robot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #6a8759;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #8a653b;}
+.s3 { color: #9876aa; font-style: italic;}
+.s4 { color: #a9b7c6;}
+.s5 { color: #cc7832;}
+.s6 { color: #ffc66d;}
+.s7 { color: #77b767;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ChooseACategoryTest.robot</font>
+</center></td></tr></table>
+<pre><span class="s0">*** Settings ***</span>
+<span class="s2">Library  </span><span class="s3">AppiumLibrary</span>
+
+<span class="s0">*** Variables ***</span>
+<span class="s4">${PAGE-TITILE}   </span><span class="s3">xpath=//XCUIElementTypeNavigationBar[@name=&quot;Choose a category&quot;]</span>
+<span class="s4">${GREEEN-CATEGORY}   </span><span class="s3">xpath=//XCUIElementTypeApplication[@name=&quot;ZalandoAssignment&quot;]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther</span>
+<span class="s4">${BLUE-CATEGORY}    </span><span class="s3">xpath=//XCUIElementTypeApplication[@name=&quot;ZalandoAssignment&quot;]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther</span>
+<span class="s4">${GREEN-PAGE-TITLE}   </span><span class="s3">xpath=//XCUIElementTypeStaticText[@name=&quot;Green&quot;]</span>
+<span class="s4">${BLUE-PAGE-TITLE}    </span><span class="s3">xpath=//XCUIElementTypeStaticText[@name=&quot;Blue&quot;]</span>
+<span class="s4">${BACK-BUTTON}   </span><span class="s3">nsp=name==&quot;Choose a category&quot;</span>
+<span class="s0">*** Test Cases ***</span>
+
+<span class="s5">Choose Green category</span>
+   <span class="s6">open application  </span><span class="s3">http://localhost:4723/wd/hub   udid=E2B46921-37B2-46D0-A97C-B783CD45706F   platformName=iOS   deviceName=iPhone 11    automationName=XCUITest  app=//Users//trinhtran//Desktop//ZalandoAssignment.app</span>
+   <span class="s6">wait until page contains element  </span><span class="s7">${page-titile}</span>
+   <span class="s6">click element  </span><span class="s7">${greeen-category}</span>
+   <span class="s6">wait until page contains element    </span><span class="s7">${green-page-title}</span>
+   <span class="s6">CLICK ELEMENT  </span><span class="s7">${back-button}</span>
+
+<span class="s5">Suite Teardown     </span><span class="s6">Close Application</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>output.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+output.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;robot </span><span class="s1">generator</span><span class="s2">=&quot;Robot 3.2.2 (Python 3.9.1 on darwin)&quot; </span><span class="s1">generated</span><span class="s2">=&quot;20210418 16:10:08.272&quot; </span><span class="s1">rpa</span><span class="s2">=&quot;false&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;suite </span><span class="s1">id</span><span class="s2">=&quot;s1&quot; </span><span class="s1">name</span><span class="s2">=&quot;ChooseACategoryTest&quot; </span><span class="s1">source</span><span class="s2">=&quot;/Users/trinhtran/Desktop/testRF/ChooseACategoryTest.robot&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;test </span><span class="s1">id</span><span class="s2">=&quot;s1-t1&quot; </span><span class="s1">name</span><span class="s2">=&quot;Choose Green category&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;kw </span><span class="s1">name</span><span class="s2">=&quot;Open Application&quot; </span><span class="s1">library</span><span class="s2">=&quot;AppiumLibrary&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;doc&gt;</span><span class="s3">Opens a new application to given Appium server.</span>
+<span class="s3">Capabilities of appium server, Android and iOS,</span>
+<span class="s3">Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md</span>
+<span class="s3">| *Option*            | *Man.* | *Description*     |</span>
+<span class="s3">| remote_url          | Yes    | Appium server url |</span>
+<span class="s3">| alias               | no     | alias             |</span><span class="s0">&lt;/doc&gt;</span>
+<span class="s0">&lt;arguments&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">http://localhost:4723/wd/hub</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">udid=E2B46921-37B2-46D0-A97C-B783CD45706F</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">platformName=iOS</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">deviceName=iPhone 11</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">automationName=XCUITest</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">app=//Users//trinhtran//Desktop//ZalandoAssignment.app</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;/arguments&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:08.477&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:13.319&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/kw&gt;</span>
+<span class="s0">&lt;kw </span><span class="s1">name</span><span class="s2">=&quot;Wait Until Page Contains Element&quot; </span><span class="s1">library</span><span class="s2">=&quot;AppiumLibrary&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;doc&gt;</span><span class="s3">Waits until element specified with `locator` appears on current page.</span><span class="s0">&lt;/doc&gt;</span>
+<span class="s0">&lt;arguments&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">${page-titile}</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;/arguments&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:13.319&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:13.632&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/kw&gt;</span>
+<span class="s0">&lt;kw </span><span class="s1">name</span><span class="s2">=&quot;Click Element&quot; </span><span class="s1">library</span><span class="s2">=&quot;AppiumLibrary&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;doc&gt;</span><span class="s3">Click element identified by `locator`.</span><span class="s0">&lt;/doc&gt;</span>
+<span class="s0">&lt;arguments&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">${greeen-category}</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;/arguments&gt;</span>
+<span class="s0">&lt;msg </span><span class="s1">timestamp</span><span class="s2">=&quot;20210418 16:10:13.633&quot; </span><span class="s1">level</span><span class="s2">=&quot;INFO&quot;</span><span class="s0">&gt;</span><span class="s3">Clicking element 'xpath=//XCUIElementTypeApplication[@name=&quot;ZalandoAssignment&quot;]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther'.</span><span class="s0">&lt;/msg&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:13.632&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:14.163&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/kw&gt;</span>
+<span class="s0">&lt;kw </span><span class="s1">name</span><span class="s2">=&quot;Wait Until Page Contains Element&quot; </span><span class="s1">library</span><span class="s2">=&quot;AppiumLibrary&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;doc&gt;</span><span class="s3">Waits until element specified with `locator` appears on current page.</span><span class="s0">&lt;/doc&gt;</span>
+<span class="s0">&lt;arguments&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">${green-page-title}</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;/arguments&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:14.163&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:14.877&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/kw&gt;</span>
+<span class="s0">&lt;kw </span><span class="s1">name</span><span class="s2">=&quot;Click Element&quot; </span><span class="s1">library</span><span class="s2">=&quot;AppiumLibrary&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;doc&gt;</span><span class="s3">Click element identified by `locator`.</span><span class="s0">&lt;/doc&gt;</span>
+<span class="s0">&lt;arguments&gt;</span>
+<span class="s0">&lt;arg&gt;</span><span class="s3">${back-button}</span><span class="s0">&lt;/arg&gt;</span>
+<span class="s0">&lt;/arguments&gt;</span>
+<span class="s0">&lt;msg </span><span class="s1">timestamp</span><span class="s2">=&quot;20210418 16:10:14.879&quot; </span><span class="s1">level</span><span class="s2">=&quot;INFO&quot;</span><span class="s0">&gt;</span><span class="s3">Clicking element 'nsp=name==&quot;Choose a category&quot;'.</span><span class="s0">&lt;/msg&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:14.878&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:15.522&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/kw&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:08.477&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:15.522&quot; </span><span class="s1">critical</span><span class="s2">=&quot;yes&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/test&gt;</span>
+<span class="s0">&lt;test </span><span class="s1">id</span><span class="s2">=&quot;s1-t2&quot; </span><span class="s1">name</span><span class="s2">=&quot;Suite Teardown&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;kw </span><span class="s1">name</span><span class="s2">=&quot;Close Application&quot; </span><span class="s1">library</span><span class="s2">=&quot;AppiumLibrary&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;doc&gt;</span><span class="s3">Closes the current application and also close webdriver session.</span><span class="s0">&lt;/doc&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:15.523&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:16.592&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/kw&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:15.522&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:16.592&quot; </span><span class="s1">critical</span><span class="s2">=&quot;yes&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/test&gt;</span>
+<span class="s0">&lt;status </span><span class="s1">status</span><span class="s2">=&quot;PASS&quot; </span><span class="s1">starttime</span><span class="s2">=&quot;20210418 16:10:08.273&quot; </span><span class="s1">endtime</span><span class="s2">=&quot;20210418 16:10:16.594&quot;</span><span class="s0">&gt;&lt;/status&gt;</span>
+<span class="s0">&lt;/suite&gt;</span>
+<span class="s0">&lt;statistics&gt;</span>
+<span class="s0">&lt;total&gt;</span>
+<span class="s0">&lt;stat </span><span class="s1">pass</span><span class="s2">=&quot;2&quot; </span><span class="s1">fail</span><span class="s2">=&quot;0&quot;</span><span class="s0">&gt;</span><span class="s3">Critical Tests</span><span class="s0">&lt;/stat&gt;</span>
+<span class="s0">&lt;stat </span><span class="s1">pass</span><span class="s2">=&quot;2&quot; </span><span class="s1">fail</span><span class="s2">=&quot;0&quot;</span><span class="s0">&gt;</span><span class="s3">All Tests</span><span class="s0">&lt;/stat&gt;</span>
+<span class="s0">&lt;/total&gt;</span>
+<span class="s0">&lt;tag&gt;</span>
+<span class="s0">&lt;/tag&gt;</span>
+<span class="s0">&lt;suite&gt;</span>
+<span class="s0">&lt;stat </span><span class="s1">pass</span><span class="s2">=&quot;2&quot; </span><span class="s1">fail</span><span class="s2">=&quot;0&quot; </span><span class="s1">id</span><span class="s2">=&quot;s1&quot; </span><span class="s1">name</span><span class="s2">=&quot;ChooseACategoryTest&quot;</span><span class="s0">&gt;</span><span class="s3">ChooseACategoryTest</span><span class="s0">&lt;/stat&gt;</span>
+<span class="s0">&lt;/suite&gt;</span>
+<span class="s0">&lt;/statistics&gt;</span>
+<span class="s0">&lt;errors&gt;</span>
+<span class="s0">&lt;/errors&gt;</span>
+<span class="s0">&lt;/robot&gt;</span>
+</pre>
+</body>
+</html>
